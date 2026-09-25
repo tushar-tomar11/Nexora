@@ -1,4 +1,4 @@
-﻿document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const modal = document.getElementById("waitlist-modal");
   if (!modal) {
     return;

@@ -1,4 +1,4 @@
-﻿document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const themeBtn = document.querySelector("[data-theme-toggle]");
 
   const applyTheme = (theme) => {
