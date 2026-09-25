@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pricing — Nexora</title>
+    <meta name="description" content="Nexora pricing: open source today, hosted cloud coming soon.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://gradex.dev/pricing">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Nexora">
+    <meta property="og:title" content="Pricing — Nexora">
+    <meta property="og:description" content="Nexora pricing: open source today, hosted cloud coming soon.">
+    <meta property="og:url" content="https://gradex.dev/pricing">
+    <meta property="og:image" content="https://gradex.dev/assets/hero-wave.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pricing — Nexora">
+    <meta name="twitter:description" content="Nexora pricing: open source today, hosted cloud coming soon.">
+    <meta name="twitter:image" content="https://gradex.dev/assets/hero-wave.png">
+    <meta name="theme-color" content="#16a34a">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html" aria-label="Nexora home">
+          <svg class="logo-mark" viewBox="0 0 48 48"><defs><linearGradient id="nexora-logo" x1="6" y1="6" x2="42" y2="42"><stop stop-color="#16a34a"/><stop offset="1" stop-color="#22c55e"/></linearGradient></defs><path fill="url(#nexora-logo)" d="M10 38V10c0-2.2 1.8-4 4-4s4 1.8 4 4v17.2l14.8-19.5c1.1-1.4 2.8-2.2 4.6-2.2 3.3 0 6 2.7 6 6.5V38c0 2.2-1.8 4-4 4s-4-1.8-4-4V20.8L20.6 40.3c-1.1 1.4-2.8 2.2-4.6 2.2-3.3 0-6-2.7-6-6.5z"/></svg>
+          <span>Nexora</span>
+        </a>
+        <nav class="nav-links" data-nav-links aria-label="Primary">
+          <a href="index.html#product">Product</a>
+          <a href="docs.html">Docs</a>
+          <a href="blog.html">Blog</a>
+          <a href="future.html">Future</a>
+          <a class="active" href="pricing.html">Pricing</a>
+        </nav>
+        <div class="nav-actions" data-nav-actions>
+          <a class="btn btn-primary" href="docs.html#quickstart">Get started</a>
+        </div>
+        <button class="mobile-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Open menu">Menu</button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero">
+        <div class="container">
+          <div class="eyebrow">Pricing</div>
+          <h1>Start free. Upgrade when your team needs shared infrastructure.</h1>
+          <p>Nexora is open source and runs locally today. Hosted dashboards and team orchestration are planned for Nexora Cloud.</p>
+        </div>
+      </section>
+
+      <section class="container pricing-grid">
+        <article class="price-card featured">
+          <div class="eyebrow">Available now</div>
+          <h2>Open Source</h2>
+          <div class="price price-free">
+            <span class="price-amount">$0</span>
+            <span class="price-term">Forever free</span>
+          </div>
+          <p>Everything you need to run autonomous optimization locally on your own repos.</p>
+          <ul class="check-list">
+            <li>Install from PyPI with <code>pip install nexora</code></li>
+            <li>Local git worktree experiments</li>
+            <li>Live dashboard on localhost</li>
+            <li>Groq, Anthropic, OpenAI, and Ollama providers</li>
+            <li>Stats, history, JSON export, and CSV export</li>
+            <li>Secret scrubber, path safety, cache, and graceful shutdown</li>
+            <li>Cursor and Claude Code integrations</li>
+          </ul>
+          <a class="btn btn-primary" href="docs.html#quickstart">Start free today &rarr;</a>
+        </article>
+
+        <article class="price-card">
+          <div class="eyebrow">Coming soon</div>
+          <h2>Nexora Cloud</h2>
+          <div class="price-token-note">
+            <h4>Planned Token Utility</h4>
+            <p>Access to Nexora Cloud will eventually require Nexora tokens. Token requirements and allocation models are still being finalized and will be announced closer to launch.</p>
+          </div>
+          <div class="price price-custom">
+            <span class="price-amount">Custom</span>
+            <span class="price-term">Team pricing</span>
+          </div>
+          <p>Hosted observability, shared runs, and managed infrastructure for teams that want Nexora at scale.</p>
+          <ul class="check-list">
+            <li>Hosted experiment dashboards</li>
+            <li>Team run history and telemetry</li>
+            <li>Managed sandbox workers</li>
+            <li>Shared provider and budget controls</li>
+            <li>Audit trail for every patch and gate</li>
+            <li>Priority support and onboarding</li>
+          </ul>
+          <button class="btn btn-secondary" type="button" data-waitlist-open>Join Early Access</button>
+        </article>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">Provider costs</div>
+            <h2>Your model choice controls your run cost.</h2>
+            <p>Nexora does not force a provider. Start free with Groq or local with Ollama, then bring premium APIs when you need them.</p>
+          </div>
+          <div class="table-wrap">
+          <table class="cost-table">
+            <thead><tr><th scope="col">Provider</th><th scope="col">Best for</th><th scope="col">Approx cost</th><th scope="col">Setup</th></tr></thead>
+            <tbody>
+              <tr><td>Groq</td><td>Fast free cloud runs</td><td>$0 on free tier</td><td><code>--provider groq --api-key &lt;key&gt;</code></td></tr>
+              <tr><td>OpenRouter</td><td>Free-tier model testing</td><td>$0 on select models</td><td><code>--provider openrouter --api-key &lt;key&gt;</code></td></tr>
+              <tr><td>Ollama</td><td>Fully local private runs</td><td>$0</td><td><code>--provider ollama</code></td></tr>
+              <tr><td>Anthropic</td><td>Deep code reasoning</td><td>Usage-based</td><td><code>--provider anthropic</code></td></tr>
+              <tr><td>OpenAI</td><td>General code edits</td><td>Usage-based</td><td><code>--provider openai</code></td></tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container cta-band">
+          <div>
+            <h3>Start with open source Nexora.</h3>
+            <p>No credit card. No waitlist. Install from PyPI and run your first baseline today.</p>
+          </div>
+          <a class="btn btn-primary" href="docs.html#quickstart">Start free today &rarr;</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand"><a class="brand" href="index.html"><svg class="logo-mark" viewBox="0 0 48 48"><defs><linearGradient id="gx-foot" x1="6" y1="6" x2="42" y2="42"><stop stop-color="#16a34a"/><stop offset="1" stop-color="#22c55e"/></linearGradient></defs><path fill="url(#gx-foot)" d="M10 38V10c0-2.2 1.8-4 4-4s4 1.8 4 4v17.2l14.8-19.5c1.1-1.4 2.8-2.2 4.6-2.2 3.3 0 6 2.7 6 6.5V38c0 2.2-1.8 4-4 4s-4-1.8-4-4V20.8L20.6 40.3c-1.1 1.4-2.8 2.2-4.6 2.2-3.3 0-6-2.7-6-6.5z"/></svg><span>Nexora</span></a><p>Autonomous code optimization. Measurable improvement, every run.</p></div>
+        <div class="footer-col"><h4>Product</h4><a href="index.html#product">Overview</a><a href="future.html">Future</a><a href="pricing.html">Pricing</a></div>
+        <div class="footer-col"><h4>Resources</h4><a href="docs.html">Docs</a><a href="blog.html">Blog</a></div>
+        <div class="footer-col"><h4>Social</h4><a href="https://x.com/gradex__" rel="noopener noreferrer">X / Twitter</a></div>
+        <div class="footer-col"><h4>Legal</h4><a href="#license">MIT License</a></div>
+      </div>
+      <div class="container footer-bottom">Copyright 2026 Nexora. Built with Python.</div>
+    </footer>
+    <div id="waitlist-modal" class="waitlist-modal" hidden aria-hidden="true">
+      <div class="waitlist-dialog" role="dialog" aria-modal="true" aria-labelledby="waitlist-title">
+        <button class="waitlist-close" type="button" data-waitlist-close aria-label="Close">&times;</button>
+        <div data-waitlist-form-view>
+          <h2 id="waitlist-title">Join Early Access</h2>
+          <p class="waitlist-lead">Get updates as Nexora ships new experiment and verification features.</p>
+          <form id="waitlist-form" novalidate>
+            <label class="waitlist-label" for="waitlist-email">Email Address</label>
+            <input id="waitlist-email" class="waitlist-input" type="email" name="email" autocomplete="email" placeholder="you@company.com" required>
+            <p class="waitlist-error" data-waitlist-error hidden></p>
+            <button id="waitlist-submit" class="btn btn-primary waitlist-submit" type="submit" disabled>Join Waitlist</button>
+          </form>
+        </div>
+        <div class="waitlist-success" data-waitlist-success-view hidden>
+          <p class="waitlist-success-message">
+            <span class="waitlist-check" aria-hidden="true">&#10003;</span>
+            Your email has been recorded.<br>
+            We'll keep you updated on Nexora progress.
+          </p>
+          <button class="btn btn-secondary" type="button" data-waitlist-close>Close</button>
+        </div>
+      </div>
+    </div>
+    <script src="nav.js"></script>
+    <script src="waitlist.js"></script>
+  </body>
+</html>

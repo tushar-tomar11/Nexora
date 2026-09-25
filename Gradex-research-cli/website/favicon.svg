@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="GradeX">
+  <defs>
+    <linearGradient id="nexora-favicon" x1="6" y1="6" x2="42" y2="42">
+      <stop stop-color="#16a34a"/>
+      <stop offset="1" stop-color="#22c55e"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#nexora-favicon)" d="M10 38V10c0-2.2 1.8-4 4-4s4 1.8 4 4v17.2l14.8-19.5c1.1-1.4 2.8-2.2 4.6-2.2 3.3 0 6 2.7 6 6.5V38c0 2.2-1.8 4-4 4s-4-1.8-4-4V20.8L20.6 40.3c-1.1 1.4-2.8 2.2-4.6 2.2-3.3 0-6-2.7-6-6.5z"/>
+</svg>

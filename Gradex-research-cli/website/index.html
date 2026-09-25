@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nexora — AI-Powered Code Optimization</title>
+    <meta name="description" content="Nexora runs parallel AI agents on your codebase, measures what matters, and keeps only the changes that improve your metrics.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://gradex.dev/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Nexora">
+    <meta property="og:title" content="Nexora — AI-Powered Code Optimization">
+    <meta property="og:description" content="Nexora runs parallel AI agents on your codebase, measures what matters, and keeps only the changes that improve your metrics.">
+    <meta property="og:url" content="https://gradex.dev/">
+    <meta property="og:image" content="https://gradex.dev/assets/hero-wave.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nexora — AI-Powered Code Optimization">
+    <meta name="twitter:description" content="Nexora runs parallel AI agents on your codebase, measures what matters, and keeps only the changes that improve your metrics.">
+    <meta name="twitter:image" content="https://gradex.dev/assets/hero-wave.png">
+    <meta name="theme-color" content="#16a34a">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      try {
+        if (localStorage.getItem("nexora-theme") === "dark") {
+          document.documentElement.dataset.theme = "dark";
+        }
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html" aria-label="Nexora home">
+          <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true">
+            <defs><linearGradient id="nexora-logo" x1="6" y1="6" x2="42" y2="42"><stop stop-color="#16a34a"/><stop offset="1" stop-color="#22c55e"/></linearGradient></defs>
+            <path fill="url(#nexora-logo)" d="M10 38V10c0-2.2 1.8-4 4-4s4 1.8 4 4v17.2l14.8-19.5c1.1-1.4 2.8-2.2 4.6-2.2 3.3 0 6 2.7 6 6.5V38c0 2.2-1.8 4-4 4s-4-1.8-4-4V20.8L20.6 40.3c-1.1 1.4-2.8 2.2-4.6 2.2-3.3 0-6-2.7-6-6.5z"/>
+          </svg>
+          <span>Nexora</span>
+        </a>
+        <nav class="nav-links" data-nav-links aria-label="Primary">
+          <a href="#product">Product</a>
+          <a href="docs.html">Docs</a>
+          <a href="blog.html">Blog</a>
+          <a href="https://github.com/gradex1606-dev/Gradex-research-cli" rel="noopener noreferrer">GitHub</a>
+          <a href="pricing.html">Pricing</a>
+        </nav>
+        <div class="nav-actions" data-nav-actions>
+          <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark theme">
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 2.5v2.2M12 19.3v2.2M4.8 4.8l1.6 1.6M17.6 17.6l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.8 19.2l1.6-1.6M17.6 6.4l1.6-1.6"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M20 14.5A8.2 8.2 0 1 1 9.5 4 6.4 6.4 0 0 0 20 14.5z"/></svg>
+          </button>
+          <a class="btn btn-primary" href="#install">Get started <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <button class="mobile-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Open menu">Menu</button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero">
+        <div class="hero-bg" aria-hidden="true">
+          <span class="hero-glow hero-glow-left"></span>
+          <span class="hero-glow hero-glow-right"></span>
+          <span class="hero-ribbon hero-ribbon-left"></span>
+          <span class="hero-ribbon hero-ribbon-right"></span>
+          <span class="hero-grid"></span>
+          <span class="hero-dots"></span>
+          <span class="hero-square hero-square-a"></span>
+          <span class="hero-square hero-square-b"></span>
+          <span class="hero-square hero-square-c"></span>
+          <span class="hero-square hero-square-d"></span>
+          <span class="hero-square hero-square-e"></span>
+        </div>
+        <div class="container hero-layout">
+          <div class="hero-inner">
+            <div class="hero-copy">
+              <div class="eyebrow">
+                <span class="eyebrow-dot" aria-hidden="true"></span>
+                AI agents for modern development
+              </div>
+              <h1>
+                <span class="hero-line hero-line-dark">Turn ideas into</span>
+                <span class="hero-line hero-line-dark">better code.</span>
+                <span class="hero-line hero-line-green">Automatically.</span>
+              </h1>
+              <p>Nexora runs multiple AI agents on your codebase, explores ideas in parallel, runs experiments, and keeps only the changes that actually improve your metrics.</p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#install">Get started for free <span aria-hidden="true">&rarr;</span></a>
+                <a class="btn btn-secondary" href="https://github.com/gradex1606-dev/Gradex-research-cli" rel="noopener noreferrer">
+                  <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  View on GitHub
+                </a>
+              </div>
+              <div class="trust-badges">
+                <span class="badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> MIT Licensed</span>
+                <span class="badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 7v5c0 5 3.4 7.6 8 9 4.6-1.4 8-4 8-9V7l-8-4z"/><path d="M9 12h6"/></svg> Python 3.11+</span>
+                <span class="badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.2 2.2 4.8-5.2"/></svg> 185+ Tests Passing</span>
+                <span class="badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> Open Source</span>
+              </div>
+            </div>
+            <div class="hero-visual">
+              <img src="assets/hero-dashboard.png" alt="Nexora optimization dashboard with agents, experiments, and passing tests" width="1024" height="593" decoding="async" fetchpriority="high" class="hero-dashboard-img">
+              <p class="hero-note">Better code<br>every commit.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container pillars" aria-label="Nexora features">
+        <article class="pillar">
+          <div class="icon-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg>
+          </div>
+          <div>
+            <h3>Parallel AI Agents</h3>
+            <p>Run multiple agents on your codebase to explore more ideas, faster.</p>
+          </div>
+        </article>
+        <article class="pillar">
+          <div class="icon-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 16v-5"/><path d="M12 16V8"/><path d="M16 16v-3"/></svg>
+          </div>
+          <div>
+            <h3>Measurable Improvements</h3>
+            <p>Benchmarks, tests, and real metrics to track what actually gets better.</p>
+          </div>
+        </article>
+        <article class="pillar">
+          <div class="icon-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h3>Safe by Design</h3>
+            <p>Built-in validation ensures quality, correctness, and reliability.</p>
+          </div>
+        </article>
+        <article class="pillar">
+          <div class="icon-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-4 4 4 4"/><path d="m16 8 4 4-4 4"/></svg>
+          </div>
+          <div>
+            <h3>Open Source</h3>
+            <p>Transparent, extensible, and community-driven.</p>
+          </div>
+        </article>
+      </section>
+
+      <section id="product" class="section">
+        <div class="container product-preview">
+          <div class="dashboard-shell" aria-hidden="true">
+            <aside class="dash-sidebar">
+              <div class="dash-brand">
+                <svg class="mini-logo" viewBox="0 0 48 48"><defs><linearGradient id="nexora-mini" x1="6" y1="6" x2="42" y2="42"><stop stop-color="#16a34a"/><stop offset="1" stop-color="#22c55e"/></linearGradient></defs><path fill="url(#nexora-mini)" d="M10 38V10c0-2.2 1.8-4 4-4s4 1.8 4 4v17.2l14.8-19.5c1.1-1.4 2.8-2.2 4.6-2.2 3.3 0 6 2.7 6 6.5V38c0 2.2-1.8 4-4 4s-4-1.8-4-4V20.8L20.6 40.3c-1.1 1.4-2.8 2.2-4.6 2.2-3.3 0-6-2.7-6-6.5z"/></svg>
+                Nexora
+              </div>
+              <nav class="dash-nav">
+                <span class="active">&#8962; Overview</span>
+                <span>&#9633; Experiments</span>
+                <span>&#8961; Benchmarks</span>
+                <span>&#9671; Gates</span>
+                <span>&#9678; Repositories</span>
+                <span>&#9881; Settings</span>
+              </nav>
+              <div class="project-card">Current Project<strong>payment-service</strong></div>
+            </aside>
+            <div class="dash-main">
+              <div class="dash-top">
+                <div class="dash-title">Overview <span class="running">Running</span></div>
+                <div class="exp-tag">Experiment #1287<br>Started 2m ago</div>
+              </div>
+              <div class="metrics-grid">
+                <div class="metric-card"><span>Baseline</span><strong>1.42s</strong><small>Current</small></div>
+                <div class="metric-card"><span>Best Score</span><strong>0.87s</strong><small class="positive">+ 38.7%</small></div>
+                <div class="metric-card"><span>Experiments</span><strong>12</strong><small>6 running</small></div>
+                <div class="metric-card"><span>Pass Rate</span><strong>100%</strong><small>All gates passed</small></div>
+              </div>
+              <div class="dash-panels">
+                <div class="panel">
+                  <h4>Optimization Progress</h4>
+                  <div class="chart">
+                    <svg viewBox="0 0 320 178" preserveAspectRatio="none">
+                      <path d="M0 135 C55 120 78 105 112 92 S170 66 210 58 S278 48 320 42" fill="none" stroke="#16a34a" stroke-width="3"/>
+                      <path d="M0 135 C55 120 78 105 112 92 S170 66 210 58 S278 48 320 42 L320 178 L0 178 Z" fill="rgba(99,102,241,0.12)"/>
+                    </svg>
+                    <span class="chart-label">Best: 0.87s</span>
+                  </div>
+                </div>
+                <div class="panel">
+                  <h4>Recent Experiments</h4>
+                  <div class="experiment-list">
+                    <div class="experiment-row"><span>#1287</span><span>Optimize parser loop</span><span class="score">0.87s</span><span>&#10003;</span></div>
+                    <div class="experiment-row"><span>#1286</span><span>Inline cache improvements</span><span class="score">0.92s</span><span>&#10003;</span></div>
+                    <div class="experiment-row"><span>#1285</span><span>Reduce allocations</span><span>1.05s</span><span>&#10003;</span></div>
+                    <div class="experiment-row"><span>#1284</span><span>Algorithm restructure</span><span>1.12s</span><span>&#10003;</span></div>
+                    <div class="experiment-row"><span>#1283</span><span>Loop unrolling</span><span class="bad">1.21s</span><span>&#215;</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-rail">
+            <div class="feature-step">
+              <div class="icon-box">&#8961;</div>
+              <div><h3>Define what better means</h3><p>Set up benchmarks, tests, or any metric. Nexora optimizes against numbers, not guesses.</p></div>
+            </div>
+            <div class="feature-step">
+              <div class="icon-box">&#9678;</div>
+              <div><h3>Let AI explore</h3><p>Agents make many small changes in parallel using isolated git worktrees.</p></div>
+            </div>
+            <div class="feature-step">
+              <div class="icon-box">&#9813;</div>
+              <div><h3>Keep the winners</h3><p>Only changes that beat your baseline and pass your gates are kept.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trusted">
+        <div class="container">
+          <div class="trusted-title">Built with</div>
+          <div class="logo-row">
+            <span>Python</span><span>Git</span><span>FastAPI</span><span>SQLite</span><span>Typer</span><span>Rich</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">Model providers</div>
+            <h2>Free by default. Bring your own model when you need more.</h2>
+            <p>Nexora supports hosted and local providers, with Groq as the recommended free cloud option.</p>
+          </div>
+          <div class="card-grid">
+            <article class="card featured"><span class="tag">Free recommended</span><h3>Groq</h3><p>Use llama-3.3-70b-versatile with a free API key from console.groq.com.</p></article>
+            <article class="card"><span class="tag">Premium</span><h3>Anthropic</h3><p>Run Claude models for deeper code reasoning and large refactors.</p></article>
+            <article class="card"><span class="tag">Premium</span><h3>OpenAI</h3><p>Use GPT models through the standard OpenAI-compatible provider path.</p></article>
+            <article class="card"><span class="tag">Local</span><h3>Ollama</h3><p>Run fully local models with no account, no cloud calls, and no API bill.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">Host integrations</div>
+            <h2>Install into the coding tools your team already uses.</h2>
+          </div>
+          <div class="card-grid three">
+            <article class="card"><h3>Cursor</h3><p>Installs project rules into <code>.cursor/rules/</code> so agents know how to run Nexora.</p><div class="code-block">nexora install cursor<button class="copy-btn" type="button" data-copy="nexora install cursor" aria-label="Copy command to clipboard">Copy</button></div></article>
+            <article class="card"><h3>Claude Code</h3><p>Installs native skill files for discover and optimize workflows.</p><div class="code-block">nexora install claude-code<button class="copy-btn" type="button" data-copy="nexora install claude-code" aria-label="Copy command to clipboard">Copy</button></div></article>
+            <article class="card"><h3>CLI-first</h3><p>Everything also works directly from the terminal without an agent host.</p><div class="code-block">nexora --help<button class="copy-btn" type="button" data-copy="nexora --help" aria-label="Copy command to clipboard">Copy</button></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="install" class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">Install in 30 seconds</div>
+            <h2>Start with one command.</h2>
+            <p>No waitlist, no hosted platform required. Install Nexora from PyPI and run it locally.</p>
+          </div>
+          <div class="install-grid">
+            <div class="code-card">pip install nexora<button class="copy-btn" type="button" data-copy="pip install nexora" aria-label="Copy command to clipboard">Copy</button></div>
+            <div class="code-card">nexora install cursor<button class="copy-btn" type="button" data-copy="nexora install cursor" aria-label="Copy command to clipboard">Copy</button></div>
+            <div class="code-card">nexora discover "make the parser faster" --provider groq --api-key &lt;key&gt;<button class="copy-btn" type="button" data-copy='nexora discover "make the parser faster" --provider groq --api-key <key>' aria-label="Copy command to clipboard">Copy</button></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container cta-band">
+          <div>
+            <h3>Ready to improve your code?</h3>
+            <p>Get started in minutes. No credit card required.</p>
+          </div>
+          <a class="btn btn-primary" href="#install">Get started for free &rarr;</a>
+        </div>
+      </section>
+    </main>
+
+    <section class="product-vision-cta-wrap" aria-label="Early access">
+      <div class="container">
+        <div class="future-vision-banner">
+          <div class="future-vision-banner-left">
+            <p class="future-vision-headline">Ship improvements.<br>Not guesses.</p>
+          </div>
+          <div class="future-vision-banner-center">
+            <p>Every change should be measured, benchmarked, and proven.</p>
+          </div>
+          <div class="future-vision-banner-right">
+            <button class="btn btn-primary" type="button" data-waitlist-open>Join Early Access</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <svg class="logo-mark" viewBox="0 0 48 48"><defs><linearGradient id="gx-foot" x1="6" y1="6" x2="42" y2="42"><stop stop-color="#16a34a"/><stop offset="1" stop-color="#22c55e"/></linearGradient></defs><path fill="url(#gx-foot)" d="M10 38V10c0-2.2 1.8-4 4-4s4 1.8 4 4v17.2l14.8-19.5c1.1-1.4 2.8-2.2 4.6-2.2 3.3 0 6 2.7 6 6.5V38c0 2.2-1.8 4-4 4s-4-1.8-4-4V20.8L20.6 40.3c-1.1 1.4-2.8 2.2-4.6 2.2-3.3 0-6-2.7-6-6.5z"/></svg>
+            <span>Nexora</span>
+          </a>
+          <p>Autonomous code optimization. Measurable improvement, every run.</p>
+        </div>
+        <div class="footer-col"><h4>Product</h4><a href="#product">Overview</a><a href="future.html">Future</a><a href="pricing.html">Pricing</a><a href="docs.html">Install</a></div>
+        <div class="footer-col"><h4>Resources</h4><a href="docs.html">Docs</a><a href="blog.html">Blog</a></div>
+        <div class="footer-col"><h4>Social</h4><a href="https://x.com/gradex__" rel="noopener noreferrer">X / Twitter</a></div>
+        <div class="footer-col"><h4>Legal</h4><a href="#license">MIT License</a></div>
+      </div>
+      <div class="container footer-bottom">Copyright 2026 Nexora. Built with Python.</div>
+    </footer>
+    <div class="copy-toast" id="copy-toast" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+    <div id="waitlist-modal" class="waitlist-modal" hidden aria-hidden="true">
+      <div class="waitlist-dialog" role="dialog" aria-modal="true" aria-labelledby="waitlist-title">
+        <button class="waitlist-close" type="button" data-waitlist-close aria-label="Close">&times;</button>
+        <div data-waitlist-form-view>
+          <h2 id="waitlist-title">Join Early Access</h2>
+          <p class="waitlist-lead">Get updates as Nexora ships new experiment and verification features.</p>
+          <form id="waitlist-form" novalidate>
+            <label class="waitlist-label" for="waitlist-email">Email Address</label>
+            <input id="waitlist-email" class="waitlist-input" type="email" name="email" autocomplete="email" placeholder="you@company.com" required>
+            <p class="waitlist-error" data-waitlist-error hidden></p>
+            <button id="waitlist-submit" class="btn btn-primary waitlist-submit" type="submit" disabled>Join Waitlist</button>
+          </form>
+        </div>
+        <div class="waitlist-success" data-waitlist-success-view hidden>
+          <p class="waitlist-success-message">
+            <span class="waitlist-check" aria-hidden="true">&#10003;</span>
+            Your email has been recorded.<br>
+            We'll keep you updated on Nexora progress.
+          </p>
+          <button class="btn btn-secondary" type="button" data-waitlist-close>Close</button>
+        </div>
+      </div>
+    </div>
+    <script src="nav.js"></script>
+    <script src="waitlist.js"></script>
+  </body>
+</html>

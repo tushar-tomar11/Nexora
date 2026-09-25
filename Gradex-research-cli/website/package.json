@@ -1,0 +1,10 @@
+{
+  "name": "nexora-website",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Nexora marketing site (static HTML)",
+  "scripts": {
+    "validate": "node scripts/validate.js",
+    "build": "npm run validate"
+  }
+}
