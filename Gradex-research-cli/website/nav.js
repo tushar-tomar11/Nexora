@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+﻿document.addEventListener("DOMContentLoaded", () => {
   const themeBtn = document.querySelector("[data-theme-toggle]");
 
   const applyTheme = (theme) => {
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     themeBtn.addEventListener("click", () => {
       const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
       try {
-        localStorage.setItem("nexora-theme", next);
+        localStorage.setItem("gradez-theme", next);
       } catch (e) {}
       applyTheme(next);
     });

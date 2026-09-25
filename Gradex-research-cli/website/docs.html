@@ -1,21 +1,21 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Documentation — Nexora</title>
-    <meta name="description" content="Install and use Nexora, the open-source autonomous code optimization CLI.">
+    <title>Documentation — Gradez</title>
+    <meta name="description" content="Install and use Gradez, the open-source autonomous code optimization CLI.">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="canonical" href="https://gradex.dev/docs">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Nexora">
-    <meta property="og:title" content="Documentation — Nexora">
-    <meta property="og:description" content="Install and use Nexora, the open-source autonomous code optimization CLI.">
+    <meta property="og:site_name" content="Gradez">
+    <meta property="og:title" content="Documentation — Gradez">
+    <meta property="og:description" content="Install and use Gradez, the open-source autonomous code optimization CLI.">
     <meta property="og:url" content="https://gradex.dev/docs">
     <meta property="og:image" content="https://gradex.dev/assets/hero-wave.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Documentation — Nexora">
-    <meta name="twitter:description" content="Install and use Nexora, the open-source autonomous code optimization CLI.">
+    <meta name="twitter:title" content="Documentation — Gradez">
+    <meta name="twitter:description" content="Install and use Gradez, the open-source autonomous code optimization CLI.">
     <meta name="twitter:image" content="https://gradex.dev/assets/hero-wave.png">
     <meta name="theme-color" content="#16a34a">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,9 +27,9 @@
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
       <div class="container nav">
-        <a class="brand" href="index.html" aria-label="Nexora home">
-          <svg class="logo-mark" viewBox="0 0 48 48"><defs><linearGradient id="nexora-logo" x1="6" y1="6" x2="42" y2="42"><stop stop-color="#16a34a"/><stop offset="1" stop-color="#22c55e"/></linearGradient></defs><path fill="url(#nexora-logo)" d="M10 38V10c0-2.2 1.8-4 4-4s4 1.8 4 4v17.2l14.8-19.5c1.1-1.4 2.8-2.2 4.6-2.2 3.3 0 6 2.7 6 6.5V38c0 2.2-1.8 4-4 4s-4-1.8-4-4V20.8L20.6 40.3c-1.1 1.4-2.8 2.2-4.6 2.2-3.3 0-6-2.7-6-6.5z"/></svg>
-          <span>Nexora</span>
+        <a class="brand" href="index.html" aria-label="Gradez home">
+          <svg class="logo-mark" viewBox="0 0 48 48"><defs><linearGradient id="gradez-logo" x1="4" y1="4" x2="44" y2="44" gradientUnits="userSpaceOnUse"><stop stop-color="#16a34a"/><stop offset="1" stop-color="#22c55e"/></linearGradient></defs><rect x="2" y="2" width="44" height="44" rx="12" fill="url(#gradez-logo)"/><path fill="#ffffff" d="M13 13h22l-14 22h14v4H11l14-22H13z"/></svg>
+          <span>Gradez</span>
         </a>
         <nav class="nav-links" data-nav-links aria-label="Primary">
           <a href="index.html#product">Product</a>
@@ -49,8 +49,8 @@
       <section class="page-hero">
         <div class="container">
           <div class="eyebrow">Documentation</div>
-          <h1>Install Nexora and run your first optimization loop.</h1>
-          <p>Nexora discovers a measurable target, creates a baseline, runs parallel experiments in isolated git worktrees, and keeps only patches that improve your metric and pass your gates.</p>
+          <h1>Install Gradez and run your first optimization loop.</h1>
+          <p>gradez discovers a measurable target, creates a baseline, runs parallel experiments in isolated git worktrees, and keeps only patches that improve your metric and pass your gates.</p>
         </div>
       </section>
 
@@ -68,16 +68,16 @@
           <section id="quickstart" class="docs-section">
             <h2>Quickstart</h2>
             <p>Run these commands in any Python project with git initialized.</p>
-            <div class="code-block">pip install nexora
-nexora install cursor
-nexora discover "make the parser faster"
-nexora optimize
-nexora dashboard<button class="copy-btn" type="button" data-copy='pip install nexora
-nexora install cursor
-nexora discover "make the parser faster"
-nexora optimize
-nexora dashboard' aria-label="Copy command to clipboard">Copy</button></div>
-            <p>After <code>nexora install</code>, Nexora offers a one-time interactive setup for provider, model, and API key (or skip and use flags). Run <code>nexora configure</code> anytime to update saved settings.</p>
+            <div class="code-block">pip Install Gradez
+gradez install cursor
+gradez discover "make the parser faster"
+gradez optimize
+gradez dashboard<button class="copy-btn" type="button" data-copy='pip Install Gradez
+gradez install cursor
+gradez discover "make the parser faster"
+gradez optimize
+gradez dashboard' aria-label="Copy command to clipboard">Copy</button></div>
+            <p>After <code>gradez install</code>, Gradez offers a one-time interactive setup for provider, model, and API key (or skip and use flags). Run <code>gradez configure</code> anytime to update saved settings.</p>
           </section>
 
           <section id="cli" class="docs-section">
@@ -86,18 +86,18 @@ nexora dashboard' aria-label="Copy command to clipboard">Copy</button></div>
             <table class="command-table">
               <thead><tr><th scope="col">Command</th><th scope="col">Description</th><th scope="col">Common flags</th></tr></thead>
               <tbody>
-                <tr><td><code>nexora install</code></td><td>Install Nexora rules or skills into a coding host.</td><td><code>cursor</code>, <code>claude-code</code>, <code>--no-setup</code></td></tr>
-                <tr><td><code>nexora configure</code></td><td>Set up or update LLM provider, model, and API key.</td><td>none</td></tr>
-                <tr><td><code>nexora models</code></td><td>List recommended models for a provider.</td><td><code>--provider</code></td></tr>
-                <tr><td><code>nexora doctor</code></td><td>Check whether your environment is ready.</td><td><code>cursor</code>, <code>claude-code</code></td></tr>
-                <tr><td><code>nexora dashboard</code></td><td>Start the live dashboard on localhost.</td><td><code>--port</code>, <code>--no-browser</code></td></tr>
-                <tr><td><code>nexora upgrade</code></td><td>Check PyPI for a newer Nexora release.</td><td>none</td></tr>
-                <tr><td><code>nexora discover</code></td><td>Analyze the repo and capture a baseline score (Python or Node).</td><td><code>--provider</code>, <code>--model</code>, <code>--api-key</code></td></tr>
-                <tr><td><code>nexora optimize</code></td><td>Run the parallel optimization loop.</td><td><code>--subagents</code>, <code>--budget</code>, <code>--stall</code></td></tr>
-                <tr><td><code>nexora stats</code></td><td>Show analytics, token usage, cost estimate; export JSON or CSV.</td><td><code>--json</code>, <code>--csv</code>, <code>--run-id</code></td></tr>
-                <tr><td><code>nexora traces</code></td><td>View experiment trace timeline.</td><td><code>--experiment</code>, <code>--json</code></td></tr>
-                <tr><td><code>nexora report</code></td><td>Export a shareable HTML run report.</td><td><code>--output</code>, <code>--run-id</code></td></tr>
-                <tr><td><code>nexora history</code></td><td>List recent optimization runs.</td><td><code>--limit</code></td></tr>
+                <tr><td><code>gradez install</code></td><td>Install Gradez rules or skills into a coding host.</td><td><code>cursor</code>, <code>claude-code</code>, <code>--no-setup</code></td></tr>
+                <tr><td><code>gradez configure</code></td><td>Set up or update LLM provider, model, and API key.</td><td>none</td></tr>
+                <tr><td><code>gradez models</code></td><td>List recommended models for a provider.</td><td><code>--provider</code></td></tr>
+                <tr><td><code>gradez doctor</code></td><td>Check whether your environment is ready.</td><td><code>cursor</code>, <code>claude-code</code></td></tr>
+                <tr><td><code>gradez dashboard</code></td><td>Start the live dashboard on localhost.</td><td><code>--port</code>, <code>--no-browser</code></td></tr>
+                <tr><td><code>gradez upgrade</code></td><td>Check PyPI for a newer Gradez release.</td><td>none</td></tr>
+                <tr><td><code>gradez discover</code></td><td>Analyze the repo and capture a baseline score (Python or Node).</td><td><code>--provider</code>, <code>--model</code>, <code>--api-key</code></td></tr>
+                <tr><td><code>gradez optimize</code></td><td>Run the parallel optimization loop.</td><td><code>--subagents</code>, <code>--budget</code>, <code>--stall</code></td></tr>
+                <tr><td><code>gradez stats</code></td><td>Show analytics, token usage, cost estimate; export JSON or CSV.</td><td><code>--json</code>, <code>--csv</code>, <code>--run-id</code></td></tr>
+                <tr><td><code>gradez traces</code></td><td>View experiment trace timeline.</td><td><code>--experiment</code>, <code>--json</code></td></tr>
+                <tr><td><code>gradez report</code></td><td>Export a shareable HTML run report.</td><td><code>--output</code>, <code>--run-id</code></td></tr>
+                <tr><td><code>gradez history</code></td><td>List recent optimization runs.</td><td><code>--limit</code></td></tr>
               </tbody>
             </table>
             </div>
@@ -105,7 +105,7 @@ nexora dashboard' aria-label="Copy command to clipboard">Copy</button></div>
 
           <section id="providers" class="docs-section">
             <h2>Provider setup</h2>
-            <p>Use CLI flags for a quick start, run <code>nexora configure</code> for interactive setup, or store defaults in <code>~/.nexora/config.toml</code>.</p>
+            <p>Use CLI flags for a quick start, run <code>gradez configure</code> for interactive setup, or store defaults in <code>~/.gradez/config.toml</code>.</p>
             <div class="code-block">[llm]
 provider = "groq"
 model = "llama-3.3-70b-versatile"
@@ -117,7 +117,7 @@ model = "llama-3.3-70b-versatile"
 api_key = "gsk_..."' aria-label="Copy command to clipboard">Copy</button></div>
             <div class="card-grid">
               <article class="card featured"><h3>Groq</h3><p>Recommended free cloud provider. Fast inference and no local setup.</p></article>
-              <article class="card"><h3>OpenRouter</h3><p>Try Nexora with free-tier models using one API key. Best for testing <code>discover</code>.</p></article>
+              <article class="card"><h3>OpenRouter</h3><p>Try Gradez with free-tier models using one API key. Best for testing <code>discover</code>.</p></article>
               <article class="card"><h3>Ollama</h3><p>Fully local. Run <code>ollama serve</code> and pull a model before starting.</p></article>
               <article class="card"><h3>Anthropic</h3><p>Use Claude models when you need deeper code reasoning.</p></article>
               <article class="card"><h3>OpenAI</h3><p>Use GPT models through the OpenAI-compatible path.</p></article>
@@ -127,8 +127,8 @@ api_key = "gsk_..."' aria-label="Copy command to clipboard">Copy</button></div>
           <section id="dashboard" class="docs-section">
             <h2>Dashboard</h2>
             <p>The dashboard gives you trust while the optimizer runs: latest run, experiments, pass rate, score chart, and trace logs.</p>
-            <div class="code-block">nexora dashboard
-# Open http://127.0.0.1:8080<button class="copy-btn" type="button" data-copy="nexora dashboard" aria-label="Copy command to clipboard">Copy</button></div>
+            <div class="code-block">gradez dashboard
+# Open http://127.0.0.1:8080<button class="copy-btn" type="button" data-copy="gradez dashboard" aria-label="Copy command to clipboard">Copy</button></div>
             <ul>
               <li>Experiment table shows status, score, delta from baseline, and gate result.</li>
               <li>Score chart plots only passed experiments.</li>
@@ -139,24 +139,24 @@ api_key = "gsk_..."' aria-label="Copy command to clipboard">Copy</button></div>
           <section id="analytics" class="docs-section">
             <h2>Analytics</h2>
             <p>Use stats and history to inspect run quality, export data, and prove that changes improved real metrics.</p>
-            <div class="code-block">nexora stats
-nexora stats --json run.json --csv run.csv
-nexora report -o run-report.html
-nexora history --limit 20<button class="copy-btn" type="button" data-copy="nexora stats
-nexora stats --json run.json --csv run.csv
-nexora report -o run-report.html
-nexora history --limit 20" aria-label="Copy command to clipboard">Copy</button></div>
+            <div class="code-block">gradez stats
+gradez stats --json run.json --csv run.csv
+gradez report -o run-report.html
+gradez history --limit 20<button class="copy-btn" type="button" data-copy="gradez stats
+gradez stats --json run.json --csv run.csv
+gradez report -o run-report.html
+gradez history --limit 20" aria-label="Copy command to clipboard">Copy</button></div>
           </section>
 
           <section id="hosts" class="docs-section">
             <h2>Host plugins</h2>
-            <p>Nexora works directly from the CLI, but it can also install guidance into coding hosts.</p>
+            <p>Gradez works directly from the CLI, but it can also install guidance into coding hosts.</p>
             <div class="table-wrap">
             <table class="command-table">
               <thead><tr><th scope="col">Host</th><th scope="col">Install command</th><th scope="col">What it adds</th></tr></thead>
               <tbody>
-                <tr><td>Cursor</td><td><code>nexora install cursor</code></td><td>Project rules in <code>.cursor/rules/</code>.</td></tr>
-                <tr><td>Claude Code</td><td><code>nexora install claude-code</code></td><td>Discover and optimize skill files.</td></tr>
+                <tr><td>Cursor</td><td><code>gradez install cursor</code></td><td>Project rules in <code>.cursor/rules/</code>.</td></tr>
+                <tr><td>Claude Code</td><td><code>gradez install claude-code</code></td><td>Discover and optimize skill files.</td></tr>
               </tbody>
             </table>
             </div>
@@ -167,13 +167,13 @@ nexora history --limit 20" aria-label="Copy command to clipboard">Copy</button><
 
     <footer class="site-footer">
       <div class="container footer-grid">
-        <div class="footer-brand"><a class="brand" href="index.html"><svg class="logo-mark" viewBox="0 0 48 48"><defs><linearGradient id="gx-foot" x1="6" y1="6" x2="42" y2="42"><stop stop-color="#16a34a"/><stop offset="1" stop-color="#22c55e"/></linearGradient></defs><path fill="url(#gx-foot)" d="M10 38V10c0-2.2 1.8-4 4-4s4 1.8 4 4v17.2l14.8-19.5c1.1-1.4 2.8-2.2 4.6-2.2 3.3 0 6 2.7 6 6.5V38c0 2.2-1.8 4-4 4s-4-1.8-4-4V20.8L20.6 40.3c-1.1 1.4-2.8 2.2-4.6 2.2-3.3 0-6-2.7-6-6.5z"/></svg><span>Nexora</span></a><p>Autonomous code optimization. Measurable improvement, every run.</p></div>
+        <div class="footer-brand"><a class="brand" href="index.html"><svg class="logo-mark" viewBox="0 0 48 48"><defs><linearGradient id="gradez-foot" x1="4" y1="4" x2="44" y2="44" gradientUnits="userSpaceOnUse"><stop stop-color="#16a34a"/><stop offset="1" stop-color="#22c55e"/></linearGradient></defs><rect x="2" y="2" width="44" height="44" rx="12" fill="url(#gradez-foot)"/><path fill="#ffffff" d="M13 13h22l-14 22h14v4H11l14-22H13z"/></svg><span>Gradez</span></a><p>Autonomous code optimization. Measurable improvement, every run.</p></div>
         <div class="footer-col"><h4>Product</h4><a href="index.html#product">Overview</a><a href="future.html">Future</a><a href="pricing.html">Pricing</a></div>
         <div class="footer-col"><h4>Resources</h4><a href="docs.html">Docs</a><a href="blog.html">Blog</a></div>
         <div class="footer-col"><h4>Social</h4><a href="https://x.com/gradex__" rel="noopener noreferrer">X / Twitter</a></div>
         <div class="footer-col"><h4>Legal</h4><a href="#license">MIT License</a></div>
       </div>
-      <div class="container footer-bottom">Copyright 2026 Nexora. Built with Python.</div>
+      <div class="container footer-bottom">Copyright 2026 Gradez. Built with Python.</div>
     </footer>
     <script src="nav.js"></script>
   </body>

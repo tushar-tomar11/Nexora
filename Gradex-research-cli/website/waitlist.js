@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+﻿document.addEventListener("DOMContentLoaded", () => {
   const modal = document.getElementById("waitlist-modal");
   if (!modal) {
     return;
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const saveLocalDev = (email) => {
-    const key = "nexora-waitlist-emails";
+    const key = "Gradez-waitlist-emails";
     const existing = JSON.parse(localStorage.getItem(key) || "[]");
     if (!existing.includes(email)) {
       existing.push(email);
